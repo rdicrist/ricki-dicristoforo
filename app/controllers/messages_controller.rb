@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-
+  skip_before_action :authenticate_user!
   def new
     @message = Message.new
   end
@@ -16,21 +16,27 @@ class MessagesController < ApplicationController
     end
   end
   
-def create
-    @contact = Contact.new(params[:contact])
-    @contact.request = request
-    if @contact.deliver
-      flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
-    else
-      flash.now[:error] = 'Cannot send message.'
-      render :new
-    end
-end
+  def protect_against_forgery?
+      false
+  end
+  
+# def create
+#     @message = Message.new(params[:message])
+#     # @message.request = request
+#     if @message.deliver
+#       flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
+#     else
+#       flash.now[:error] = 'Cannot send message.'
+#       render :new
+#     end
+# end
   
 private
 
   def message_params
     params.require(:message).permit(:name, :email, :content)
   end
+  
+
 
 end

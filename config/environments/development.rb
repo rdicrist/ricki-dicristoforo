@@ -51,8 +51,8 @@ Rails.application.configure do
 }
 
 config.action_mailer.default_url_options = {
-  host: "https://ricki-dicristoforo-rdicrist.c9users.io"
+  host: "https://social-support-network.herokuapp.com"
 }
 
-
+# config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end

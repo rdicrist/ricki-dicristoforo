@@ -13,4 +13,6 @@ class Message
     
     validates :content,
         presence: true
+        
+
 end
