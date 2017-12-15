@@ -17,6 +17,7 @@
         <li><%= link_to 'Projects', "/projects" %></li>
         <li><%= link_to 'Contact Me', "/contact" %></li>
         <li><%= link_to 'Blog', "/posts#index" %></li>
+        <li><%= link_to 'Links', "/links" %></li>
         <% if admin_signed_in? %>
         <!--This block is only visible to signed in admins -->
           <li><%= link_to 'New Post', new_post_path %></li>

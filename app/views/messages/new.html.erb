@@ -1,17 +1,18 @@
-<h1><center>Contact Me</center></h1>
+<center>
+<h1>Contact Me</h1>
 
 <%= form_for @message, url: contact_path do |message_form| %>
   <fieldset>
     <div class="field">
-      <%= message_form.text_field :name, placeholder: "Name" %>
+      <%= message_form.text_field :name, size: "30x10", placeholder: "Name" %>
     </div>
     
     <div class="field">
-      <%= message_form.email_field :email, placeholder: "Email"%>
+      <%= message_form.email_field :email, size: "30x10",  placeholder: "Email"%>
     </div>
     
     <div class="field">
-      <%= message_form.text_area :content, placeholder: "Message"%>
+      <%= message_form.text_area :content, size: "40x5" , placeholder: "Message"%>
     </div>
   </fieldset>
   
@@ -20,6 +21,6 @@
       <%= message_form.submit "Send" %>
     </div>
   </fieldset>
+  
+  </center>
 <% end %>
-
- 

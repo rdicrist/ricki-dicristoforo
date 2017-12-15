@@ -63,6 +63,7 @@ Rails.application.routes.draw do
   
   get "/about" => "static#about"
   get "/projects" => "static#projects"
+  get "/links" => "static#links"
   
   get 'contact', to: 'messages#new', as: 'contact'
   post 'contact', to: 'messages#create'

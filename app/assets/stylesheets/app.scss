@@ -11,8 +11,37 @@ body {
 
 .under_title {
  font-size: 75%;
+ color: grey;
 }
 
 .navbar {
- background-color: #D4D7E1;
+ background-color: #D4D6DB;
+}
+
+.content-body {
+ padding: 0rem 10rem;
+ padding-bottom: 10rem;
+}
+
+.alert {
+ padding: 0;
+}
+
+.volunteer {
+ padding-top: 3rem;
+}
+
+.about {
+ padding-top: 3rem;
+}
+
+.field {
+ padding: 2rem;
+ text-align: center;
+}
+
+input, input[placeholder]{
+ font-weight:bold;
+ text-align:center;
+
 }
