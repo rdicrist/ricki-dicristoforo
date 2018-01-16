@@ -54,4 +54,4 @@ gem 'ckeditor'
 gem 'devise'
 gem 'rails_12factor'
 
-ruby "2.4.1"
+ruby "2.3.4"
