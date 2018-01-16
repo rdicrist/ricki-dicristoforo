@@ -53,3 +53,4 @@ gem 'bootstrap-sass'
 gem 'ckeditor'
 
 gem 'devise'
+gem 'rails_12factor'
