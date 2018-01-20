@@ -55,5 +55,6 @@ gem 'devise'
 gem 'rails_12factor'
 
 gem 'puma', '~> 3.7'
+gem 'carrierwave', '~> 1.0'
 
 ruby "2.3.4"
